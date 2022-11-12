@@ -11,7 +11,12 @@
 }
 
 .row {
-  margin: 0 80px;
+  margin:  0 80px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
 }
 
 .fixed__links {
@@ -449,7 +454,7 @@ transition: 100ms ease;
 .contact__right > h1{
   font-size: 32px;
   font-weight: 400;
-  margin-bottom: 16px;
+  margin-bottom: 40px;
 }
 
 .contact__form{
@@ -506,4 +511,97 @@ outline: none;
 .contact__form--submit{
   width: 120px;
   background-color: #2560e9;
+}
+
+.message__sent{
+  position: fixed;
+  top: 40px;
+  right: 24px;
+  display: flex;
+  padding: 24px;
+  align-items: center;
+  width: 320px;
+  height: 80px;
+  background-color: #2560e9;
+  color: white;
+  border-radius: 4px; 
+}
+
+.message__sent--tick{
+color: #2560e9 !important;
+background-color: #fff !important;
+font-size: 32px !important;
+padding: 4px !important;
+border-radius: 50% !important;
+margin-right: 16px !important;
+}
+
+.message__sent > p{
+  font-weight: 300;
+}
+
+.message__sent--close{
+position: absolute;
+top: 6px;
+right: 6px;
+font-size: 20px !important;
+margin-left: 24px !important;
+color: #fff !important;
+cursor: pointer;
+}
+
+/* FOOTER */
+
+#footer{
+  background-color: #24262a;
+}
+
+.footer__container{
+  padding: 80px 0;
+}
+
+.footer__row{
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.footer__sections,
+.footer__externals,
+.footer__info{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__sections,
+.footer__externals{
+  margin-right: 160px;
+}
+
+.footer__title{
+  margin-bottom: 24px;
+  font-weight: 300;
+}
+
+.footer__link{
+  font-weight: 200;
+  cursor: pointer;
+}
+
+.footer__link:active{
+  color: #f7f9fb
+}
+
+.footer__link:not(:first-child){
+  margin-top: 4px;
+}
+
+.footer__info--link{
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
+}
+
+.footer__info--link > .MuiSvgIcon-root{
+  margin-right: 8px;
 }
