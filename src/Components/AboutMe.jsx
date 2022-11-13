@@ -23,7 +23,7 @@ const AboutMe = () => {
               <span className="textcolor font-bold">React</span>. Being
               self-taught, I have built the ability to quickly grasp new
               concepts and apply them in real world situations. I am currently
-              open to new oppurtunities
+              open to new oppurtunities.
             </p>
           </div>
           <div className="aboutme__right">

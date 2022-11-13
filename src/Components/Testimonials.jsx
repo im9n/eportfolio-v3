@@ -11,7 +11,7 @@ const settings={
   return (
     <section id="testimonials">
       <div className="container">
-        <div className="row">
+        <div className="row testimonial__row">
           <h1 className="testimonials__title">Testimonials</h1>
           <OwlCarousel className="owl-theme" loop items={1} nav center={true} dots={false}>
             <Testimonial

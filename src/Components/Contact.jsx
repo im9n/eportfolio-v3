@@ -60,11 +60,11 @@ const Contact = () => {
             <div className="contact__left--details">
               <div className="contact__left--detail">
                 <LocalPhoneIcon />
-                <p>Phone: +61 433 672 785 </p>
+                <p>+61 433 672 785 </p>
               </div>
               <div className="contact__left--detail">
                 <MailIcon />
-                <p>Email: imanwmusa@gmail.com</p>
+                <p>imanwmusa@gmail.com</p>
               </div>
             </div>
           </div>
