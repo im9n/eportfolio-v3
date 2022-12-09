@@ -20,7 +20,7 @@ const Footer = () => {
             <a className="footer__link" href="https://github.com/im9n" target="_blank">
               Github
             </a>
-            <a className="footer__link" href="#" target="_blank">
+            <a className="footer__link" href="https://www.linkedin.com/in/iman-musa-3a9181249/" target="_blank">
               LinkedIn
             </a>
           </div>

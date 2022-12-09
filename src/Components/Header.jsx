@@ -13,18 +13,18 @@ const Header = () => {
         Discover more <a className="font-bold header__about--link" href="#aboutme">about me.</a>
       </h4>
       <ul className="header__links">
-        <div className="header__button">
-          <a href="">
+        <div className="header__button" >
+          <a target="_blank" href="https://www.linkedin.com/in/iman-musa-3a9181249/">
             <LinkedInIcon />
           </a>
         </div>
         <div className="header__button">
-          <a href="">
+          <a target="_blank" href="https://github.com/im9n">
             <GitHubIcon />
           </a>
         </div>
         <div className="header__button">
-          <a href="">
+          <a target="_blank" href="">
             <DescriptionIcon />
           </a>
         </div>

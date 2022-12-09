@@ -24,11 +24,11 @@ const Project = ({
         </div>
         <p className="project__description">{description}</p>
         <div className="project__links">
-          <a href={liveLink} className="project__link">
+          <a href={liveLink} target="_blank" className="project__link">
             <LaunchIcon />
             Live
           </a>
-          <a href={codeLink} className="project__link">
+          <a href={codeLink} target="_blank" className="project__link">
             <GitHubIcon />
             Code
           </a>

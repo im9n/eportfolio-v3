@@ -38,17 +38,17 @@ const Nav = () => {
         </a>
         <ul className="modal__links">
           <div className="modal__button">
-            <a href="">
+            <a href="https://www.linkedin.com/in/iman-musa-3a9181249/" target='_blank'>
               <LinkedInIcon />
             </a>
           </div>
           <div className="modal__button">
-            <a href="">
+            <a href="https://github.com/im9n" target='_blank'>
               <GitHubIcon />
             </a>
           </div>
           <div className="modal__button">
-            <a href="">
+            <a href="" target="_blank">
               <DescriptionIcon />
             </a>
           </div>
