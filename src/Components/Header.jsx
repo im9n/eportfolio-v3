@@ -2,6 +2,7 @@ import React from "react";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import DescriptionIcon from "@mui/icons-material/Description";
+import Resume from '../Assets/resume.pdf'
 
 const Header = () => {
   return (
@@ -24,7 +25,7 @@ const Header = () => {
           </a>
         </div>
         <div className="header__button">
-          <a target="_blank" href="">
+          <a target="_blank" href={Resume}>
             <DescriptionIcon />
           </a>
         </div>

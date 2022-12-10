@@ -2,6 +2,7 @@ import React from "react";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import MailIcon from "@mui/icons-material/Mail";
 import DescriptionIcon from "@mui/icons-material/Description";
+import Resume from '../Assets/resume.pdf'
 
 const Footer = () => {
   return (
@@ -38,7 +39,7 @@ const Footer = () => {
             </div>
             <div className="footer__info--link">
               <DescriptionIcon />
-              <a className="footer__link" href="#" target="_blank">
+              <a className="footer__link" href={Resume} target="_blank">
                 Resume
               </a>
             </div>

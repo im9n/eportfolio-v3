@@ -36,7 +36,7 @@ const Projects = React.memo(() => {
                 "Ticket+ is a multi-page mock streaming site that dynamically displays details of both movies and TV shows with the use of the TMDB API and Axios. This websites features filtering, advanced pagination and searching."
               }
               liveLink={"https://ticketplus-react.vercel.app/"}
-              codeLink={"https://github.com/im9n"}
+              codeLink={"https://github.com/im9n/ticketplus-react-v3"}
             />
           </div>
         </div>
