@@ -1,9 +1,17 @@
 import React from "react";
 import Project from "./Project";
-import ProjectImg1 from "../Assets/ProjectImg1.png";
-import ProjectImg2 from "../Assets/ProjectImg2.PNG";
+import TeslaImg1 from "../Assets/TeslaImg1.png";
+import TeslaImg2 from "../Assets/TeslaImg2.PNG";
+import TeslaImg3 from "../Assets/TeslaImg3.PNG";
+import TeslaImg4 from "../Assets/TeslaImg4.PNG";
+import TeslaImg5 from "../Assets/TeslaImg5.PNG";
+import MovieImg1 from "../Assets/MovieImg1.PNG";
+import MovieImg2 from "../Assets/MovieImg2.PNG";
+import MovieImg3 from "../Assets/MovieImg3.PNG";
+import MovieImg4 from "../Assets/MovieImg4.PNG";
+import MovieImg5 from "../Assets/MovieImg5.PNG";
 
-const Projects = () => {
+const Projects = React.memo(() => {
   return (
     <section id="projects">
       <div className="container">
@@ -11,7 +19,7 @@ const Projects = () => {
           <h1 className="projects__title">Projects</h1>
           <div className="projects__wrapper">
             <Project
-              image={ProjectImg1}
+              images={[TeslaImg1, TeslaImg2, TeslaImg3, TeslaImg4, TeslaImg5]}
               title={"Tesla Clone"}
               languages={["React", "Firebase"]}
               description={
@@ -21,63 +29,13 @@ const Projects = () => {
               codeLink={"https://github.com/im9n/tesla-clone"}
             />
             <Project
-              image={
-                ProjectImg2
-              }
+              images={[MovieImg1, MovieImg2, MovieImg3, MovieImg4, MovieImg5]}
               title={"Ticket+"}
               languages={["React", "TMDB API"]}
               description={
-                "Ticket+ is a multi-page mock streaming site that uses the TMDB API and Axios to fetch and display details of both movies and TV shows. This websites features searching filtering, advanced pagination and searching."
+                "Ticket+ is a multi-page mock streaming site that dynamically displays details of both movies and TV shows with the use of the TMDB API and Axios. This websites features filtering, advanced pagination and searching."
               }
-              liveLink={"https://github.com/im9n"}
-              codeLink={"https://github.com/im9n"}
-            />
-            <Project
-              image={
-                "https://images.macrumors.com/t/7__j_zA889fYW8Z8qT_7fvks1oQ=/1600x900/smart/article-new/2021/08/apple-store-website.jpg"
-              }
-              title={"Project Name"}
-              languages={["React", "Tailwind", "OMDB API"]}
-              description={
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco"
-              }
-              liveLink={"https://github.com/im9n"}
-              codeLink={"https://github.com/im9n"}
-            />
-            <Project
-              image={
-                "https://images.macrumors.com/t/7__j_zA889fYW8Z8qT_7fvks1oQ=/1600x900/smart/article-new/2021/08/apple-store-website.jpg"
-              }
-              title={"Project Name"}
-              languages={["React", "Tailwind", "OMDB API"]}
-              description={
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco"
-              }
-              liveLink={"https://github.com/im9n"}
-              codeLink={"https://github.com/im9n"}
-            />
-            <Project
-              image={
-                "https://images.macrumors.com/t/7__j_zA889fYW8Z8qT_7fvks1oQ=/1600x900/smart/article-new/2021/08/apple-store-website.jpg"
-              }
-              title={"Project Name"}
-              languages={["React", "Tailwind", "OMDB API"]}
-              description={
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco"
-              }
-              liveLink={"https://github.com/im9n"}
-              codeLink={"https://github.com/im9n"}
-            />
-                        <Project
-              image={
-                "https://images.macrumors.com/t/7__j_zA889fYW8Z8qT_7fvks1oQ=/1600x900/smart/article-new/2021/08/apple-store-website.jpg"
-              }
-              title={"Project Name"}
-              languages={["React", "Tailwind", "OMDB API"]}
-              description={
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco"
-              }
-              liveLink={"https://github.com/im9n"}
+              liveLink={"https://ticketplus-react.vercel.app/"}
               codeLink={"https://github.com/im9n"}
             />
           </div>
@@ -85,6 +43,6 @@ const Projects = () => {
       </div>
     </section>
   );
-};
+});
 
-export default Projects;
+export default React.memo(Projects);

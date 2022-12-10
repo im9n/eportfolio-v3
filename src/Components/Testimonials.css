@@ -1,0 +1,20 @@
+.owl-testimonial > .owl-nav >.owl-prev,
+.owl-testimonial > .owl-nav >.owl-next {
+  width: 40px;
+  height: 40px;
+  font-size: 24px !important;
+  border-radius: 50% !important;
+  transition: 100ms ease;
+  margin: 8px 8px 0 8px;
+}
+
+.owl-testimonial > .owl-nav >.owl-prev:hover,
+.owl-testimonial > .owl-nav >.owl-next:hover{
+    background-color: #2560e9 !important;
+    color: #fff
+}
+
+.owl-testimonial > .owl-nav {
+    display: flex;
+    justify-content: center;
+  }
