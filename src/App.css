@@ -50,7 +50,7 @@ a {
   position: relative;
   height: 100vh;
   overflow: hidden;
-  box-shadow: 0 8px 20px 8px;
+  box-shadow: 0 8px 20px 8px rgba(0, 0, 0, 0.6);
 }
 
 .landing__bg--wrapper{
@@ -463,10 +463,13 @@ background-color: #fff;
   transition: 100ms ease;
 }
 
-.project__link > .MuiSvgIcon-root {
+.project__link > .MuiSvgIcon-root{
+  width: 24px;
+  height: 24px;
   margin-right: 4px;
-  font-size: 18px;
 }
+
+
 
 .project__link:hover {
   background-color: rgb(241, 241, 241);
@@ -710,6 +713,10 @@ background-color: #fff;
   margin-top: 4px;
 }
 
+.footer__info--link > p{
+  cursor: default
+}
+
 .footer__info--link > .MuiSvgIcon-root {
   margin-right: 8px;
 }
@@ -897,8 +904,12 @@ nav{
   .footer__externals,
   .footer__info{
     margin-right: 0;
-    margin-bottom: 32px;
     text-align: center;
+  }
+
+  .footer__sections,
+  .footer__externals{
+    margin-bottom: 32px;
   }
 
   .footer__title{

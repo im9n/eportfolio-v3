@@ -11,30 +11,30 @@
 }
 
 .owl-project > .owl-nav > .owl-prev > span,
-.owl-project > .owl-nav > .owl-next > span{
-    position: absolute !important;
-    top: 0px;
-    left: 50%;
-    transform: translateX(-40%);
+.owl-project > .owl-nav > .owl-next > span {
+  position: absolute !important;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-40%);
 }
 
-.owl-project > .owl-nav > .owl-prev > span{
-    transform: translateX(-60%);
+.owl-project > .owl-nav > .owl-prev > span {
+  transform: translateX(-60%);
 }
 
 .owl-project > .owl-nav > .owl-prev {
-  left: 0;
+  left: 10px;
 }
 
 .owl-project > .owl-nav > .owl-next {
-  right: 0;
+  right: 10px;
 }
 
-@media (max-width: 480px){
-    .owl-project > .owl-nav > .owl-prev,
-.owl-project > .owl-nav > .owl-next {
-  width: 28px;
-  height: 28px;
-  font-size: 20px !important;
-}
+@media (max-width: 480px) {
+  .owl-project > .owl-nav > .owl-prev,
+  .owl-project > .owl-nav > .owl-next {
+    width: 28px;
+    height: 28px;
+    font-size: 20px !important;
+  }
 }

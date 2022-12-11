@@ -5,8 +5,8 @@ import Button from "@mui/material/Button";
 import emailjs from "@emailjs/browser";
 import DoneIcon from "@mui/icons-material/Done";
 import CloseIcon from "@mui/icons-material/Close";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 AOS.init();
 
 const Contact = () => {
@@ -43,10 +43,17 @@ const Contact = () => {
   return (
     <>
       {emailSent && (
-        <div className="message__sent" data-aos="fade-left" data-aos-duration="500">
+        <div
+          className="message__sent"
+          data-aos="fade-left"
+          data-aos-duration="500"
+        >
           <DoneIcon className="message__sent--tick" />
           <p>Message Sent</p>
-          <CloseIcon className="message__sent--close" onClick={() => setEmailSent(false)} />
+          <CloseIcon
+            className="message__sent--close"
+            onClick={() => setEmailSent(false)}
+          />
         </div>
       )}
       <section id="contact">
@@ -58,14 +65,18 @@ const Contact = () => {
               a chat.
             </p>
             <div className="contact__left--details">
-              <div className="contact__left--detail">
-                <LocalPhoneIcon />
-                <p>+61 433 672 785 </p>
-              </div>
-              <div className="contact__left--detail">
-                <MailIcon />
-                <p>imanwmusa@gmail.com</p>
-              </div>
+              <a href="tel:+61-433-672-785" style={{cursor: 'pointer'}}>
+                <div className="contact__left--detail">
+                  <LocalPhoneIcon />
+                  <p>+61 433 672 785 </p>
+                </div>
+              </a>
+              <a href="mailto:imanwmusa@gmail.com" target="_blank" style={{cursor: 'pointer'}}>
+                <div className="contact__left--detail">
+                  <MailIcon />
+                  <p>imanwmusa@gmail.com</p>
+                </div>
+              </a>
             </div>
           </div>
           <div className="contact__right">

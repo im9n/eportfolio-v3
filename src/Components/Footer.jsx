@@ -12,9 +12,9 @@ const Footer = () => {
           <div className="footer__sections">
             <h4 className="footer__title" >Sections</h4>
             <a className="footer__link" href="#aboutme">About Me</a>
-            <a className="footer__link" href="#aboutme">Projects</a>
-            <a className="footer__link" href="#aboutme">Testimonials</a>
-            <a className="footer__link" href="#aboutme">Contact</a>
+            <a className="footer__link" href="#projects">Projects</a>
+            <a className="footer__link" href="#testimonials">Testimonials</a>
+            <a className="footer__link" href="#contact">Contact</a>
           </div>
           <div className="footer__externals">
             <h4 className="footer__title" >External</h4>
@@ -29,12 +29,12 @@ const Footer = () => {
           <h4 className="footer__title" >Information</h4>
             <div className="footer__info--link">
               <LocationOnIcon />
-              <p className="footer__link">Melbourne, Australia</p>
+              <p className="footer__link" >Melbourne, Australia</p>
             </div>
             <div className="footer__info--link">
               <MailIcon />
-              <a className="footer__link" href="mailto:imanmusa2022@gmail.com" target="_blank">
-                imanwmusa@gmail.com
+              <a className="footer__link" href="mailto:imanwmusa@gmail.com" target="_blank">
+                imanwmusa@gmail.com 
               </a>
             </div>
             <div className="footer__info--link">
