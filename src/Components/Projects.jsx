@@ -10,6 +10,9 @@ import MovieImg2 from "../Assets/MovieImg2.PNG";
 import MovieImg3 from "../Assets/MovieImg3.PNG";
 import MovieImg4 from "../Assets/MovieImg4.PNG";
 import MovieImg5 from "../Assets/MovieImg5.PNG";
+import AutoImg1 from "../Assets/AutoImg1.PNG";
+import AutoImg2 from "../Assets/AutoImg2.PNG";
+import AutoImg3 from "../Assets/AutoImg3.PNG";
 
 const Projects = React.memo(() => {
   return (
@@ -18,6 +21,15 @@ const Projects = React.memo(() => {
         <div className="row project__row">
           <h1 className="projects__title">Projects</h1>
           <div className="projects__wrapper">
+          <Project
+              images={[AutoImg1, AutoImg2, AutoImg3]}
+              title={"Automotive Affection"}
+              languages={["React", "EmailJS"]}
+              description={
+                "Automotive Affection is a fully-functional website I developed for an Australian car detailing company using React. The site features a completely responsive design, as well as online appointment booking."
+              }
+              liveLink={"https://tesla-clone-iman.vercel.app/"}
+            />
             <Project
               images={[TeslaImg1, TeslaImg2, TeslaImg3, TeslaImg4, TeslaImg5]}
               title={"Tesla Clone"}

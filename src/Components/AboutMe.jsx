@@ -9,7 +9,7 @@ const AboutMe = () => {
             <h1>About Me</h1>
             <p>
               I'm a 16-year-old Australian{" "}
-              <span className="textcolor font-bold">frontend developer</span>{" "}
+              <span className="textcolor font-bold">freelance frontend developer</span>{" "}
               with experience developing and debugging{" "}
               <span className="textcolor font-bold">high quality websites</span>{" "}
               and solving difficult frontend problems with the use of{" "}
