@@ -43,7 +43,7 @@ const Project = ({
             <LaunchIcon />
             Live
           </a>
-          <a href={codeLink} target="_blank" className="project__link">
+          <a href={codeLink} target="_blank" className={`project__link ${!codeLink && 'not-allowed'}`}>
             <GitHubIcon />
             Code
           </a>

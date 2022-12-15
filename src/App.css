@@ -19,6 +19,10 @@ a {
   color: white;
 }
 
+.not-allowed{
+  cursor: not-allowed
+}
+
 .back-to-top {
   position: fixed;
   bottom: 20px;

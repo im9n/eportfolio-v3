@@ -28,7 +28,7 @@ const Projects = React.memo(() => {
               description={
                 "Automotive Affection is a fully-functional website I developed for an Australian car detailing company using React. The site features a completely responsive design, as well as online appointment booking."
               }
-              liveLink={"https://tesla-clone-iman.vercel.app/"}
+              liveLink={"https://automotive-affection.vercel.app/"}
             />
             <Project
               images={[TeslaImg1, TeslaImg2, TeslaImg3, TeslaImg4, TeslaImg5]}

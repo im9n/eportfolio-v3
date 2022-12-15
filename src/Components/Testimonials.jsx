@@ -28,10 +28,10 @@ const Testimonials = React.memo(() => {
             />
             <Testimonial
               description={
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco"
+                "Iman is a very skilled web developer, as well as very easy to work & collaberate with. He went above and beyond to ensure I was up to date and understood the development process, and I will definetely be working with him again."
               }
-              name={"Jane Doe"}
-              details={"Founder, Handbag Galore"}
+              name={"Matt Mangali"}
+              details={"Founder, Automotive Affection"}
             />
           </OwlCarousel>
         </div>
