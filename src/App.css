@@ -860,6 +860,10 @@ background-color: #fff;
     font-size: 18px; 
   }
 
+  .nav__logo--wrapper{
+    width: 90px;
+  }
+
   .nav__links{
     display: none;
   }
