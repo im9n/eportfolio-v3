@@ -13,6 +13,8 @@ import MovieImg5 from "../Assets/MovieImg5.PNG";
 import AutoImg1 from "../Assets/AutoImg1.PNG";
 import AutoImg2 from "../Assets/AutoImg2.PNG";
 import AutoImg3 from "../Assets/AutoImg3.PNG";
+import AliImg1 from "../Assets/AliImg1.PNG";
+import AliImg2 from "../Assets/AliImg2.PNG";
 
 const Projects = React.memo(() => {
   return (
@@ -29,6 +31,15 @@ const Projects = React.memo(() => {
                 "Automotive Affection is a fully-functional website I developed for an Australian car detailing company using React. The site features a completely responsive design, as well as online appointment booking."
               }
               liveLink={"https://automotive-affection.vercel.app/"}
+            />
+          <Project
+              images={[AliImg1, AliImg2]}
+              title={"E-Portfolio Template"}
+              languages={["HTML", "CSS"]}
+              description={
+                "This website is a static E-portfolio Template I designed and built for a client. The website features a completely responsive design, impressive animations, and was made using HTML and CSS best practises."
+              }
+              liveLink={"https://ali-eportfolio.vercel.app/"}
             />
             <Project
               images={[TeslaImg1, TeslaImg2, TeslaImg3, TeslaImg4, TeslaImg5]}
