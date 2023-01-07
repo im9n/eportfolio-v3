@@ -16,6 +16,7 @@
   top: 0px;
   left: 50%;
   transform: translateX(-40%);
+  color: white;
 }
 
 .owl-project > .owl-nav > .owl-prev > span {

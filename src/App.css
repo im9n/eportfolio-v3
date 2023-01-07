@@ -2,10 +2,6 @@
   font-weight: 600 !important;
 }
 
-.textcolor {
-  color: #2560e9;
-}
-
 .container {
   padding: 80px 0;
 }
@@ -19,8 +15,8 @@ a {
   color: white;
 }
 
-.not-allowed{
-  cursor: not-allowed
+.not-allowed {
+  cursor: not-allowed;
 }
 
 .back-to-top {
@@ -30,7 +26,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #2560e9;
+  background-color: #000;
   width: 48px;
   height: 48px;
   border-radius: 50%;
@@ -41,7 +37,7 @@ a {
 }
 
 .back-to-top:hover {
-  background-color: #447cff;
+  background-color: rgb(31, 31, 31);
 }
 
 .back-to-top > .MuiSvgIcon-root {
@@ -57,7 +53,7 @@ a {
   box-shadow: 0 8px 20px 8px rgba(0, 0, 0, 0.6);
 }
 
-.landing__bg--wrapper{
+.landing__bg--wrapper {
   width: 100%;
   height: 100%;
 }
@@ -85,16 +81,16 @@ nav {
   width: 100%;
 }
 
-.nav__right > .MuiSvgIcon-root{
+.nav__right > .MuiSvgIcon-root {
   display: none;
   color: rgba(255, 255, 255, 0.952);
-  font-size: 32px !important; 
+  font-size: 32px !important;
   cursor: pointer;
   transition: 200ms ease;
 }
 
-.nav__right > .MuiSvgIcon-root:hover{
-color: white;
+.nav__right > .MuiSvgIcon-root:hover {
+  color: white;
 }
 
 .nav__logo--wrapper {
@@ -128,6 +124,8 @@ color: white;
 
 .nav__link:last-child,
 .nav__link:last-child:hover {
+  color: black;
+  font-weight: 300;
   border: none;
 }
 
@@ -135,8 +133,7 @@ color: white;
   margin-left: 16px;
   padding: 8px 16px;
   border: 1px transparent solid;
-  background-color: #2560e9;
-  font-weight: 700;
+  background-color: rgb(250, 250, 250);
   transition: 300ms ease;
   cursor: pointer;
 }
@@ -144,29 +141,25 @@ color: white;
 .nav__links > button:hover {
   border-color: white;
   background-color: transparent;
+  color: white;
 }
 
-.open{
+.nav__links > button:hover .nav__link{
+color: white;
+}
+
+.open {
   animation: animate-menu-open 400ms forwards;
 }
 
-.close{
- animation: animate-menu-close 200ms forwards; 
+.close {
+  animation: animate-menu-close 200ms forwards;
 }
 
 @keyframes animate-menu-open {
   0% {
-    transform: translateX(150%);
+    transform: translateX(100%);
   }
-
-  50% {
-    transform: translateX(-12%);
-  }
-
-  85% {
-    transform: translateX(1.5%);
-  }
-
   100% {
     transform: translateX(0%);
   }
@@ -178,66 +171,78 @@ color: white;
   }
 
   100% {
-    transform: translateX(150%);
+    transform: translateX(100%);
   }
 }
 
-.nav__modal{
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  right: 20px;
-  bottom: 80px;
+.nav__modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 320px;
   background-color: #fff;
   z-index: 100;
-  border-radius: 4px;
-  border: 1px #757575 solid;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 0 20px;
+  padding-top: 80px;
   flex-direction: column;
-  transform: translateX(-150%)
+  transform: translateX(100%);
 }
 
-.nav__modal > .MuiSvgIcon-root{
+.nav__modal > .MuiSvgIcon-root {
   position: absolute;
-  top: 12px;
-  right: 12px;
-  color: #2560e9;
+  top: 20px;
+  right: 20px;
+  color: #000;
   cursor: pointer;
 }
 
 .nav__modal > a,
-.nav__modal--button > p{
-  font-size: 24px;
+.nav__modal--button > p {
+  font-size: 20px;
   font-weight: 200;
 }
 
-.nav__modal > a{
+.nav__modal > a {
   color: black;
-  margin-bottom: 24px;
+  padding: 8px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  transition: 250ms ease;
 }
 
-.nav__modal--button > p{
+.nav__modal > a:nth-child(5){
+  width: 100%;
+}
+
+.nav__modal > a:not(:nth-child(5)):hover {
+  background-color: rgba(0, 0, 0, 0.151);
+}
+
+.nav__modal--button > p {
   color: white;
 }
 
-.nav__modal--button{
-  padding: 12px 18px;
-  background-color: #2560e9;
-  border: 1px #2560e9 solid;
+.nav__modal--button {
+  width: 100%;
+  padding: 10px 0;
+  background-color: #24262a;
+  border: 1px #24262a solid;
+  color: white;
   transition: 300ms ease;
   cursor: pointer;
 }
 
-.nav__modal--button:hover{
-border-color: black;
-background-color: #fff;
+.nav__modal--button:hover {
+  border-color: black;
+  background-color: #fff;
 }
 
-.nav__modal--button:hover > p{
+.nav__modal--button:hover > p {
   color: black;
 }
+
 
 .header__content {
   position: absolute;
@@ -277,8 +282,7 @@ background-color: #fff;
   color: white;
 }
 
-.header__links,
-.modal__links {
+.header__links {
   display: flex;
   margin-top: 16px;
 }
@@ -290,14 +294,14 @@ background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #2560e9;
+  background-color: #000;
   margin-right: 12px;
   border-radius: 50%;
   transition: 250ms ease;
 }
 
 .header__button:hover,
-.modal__button:hover{
+.modal__button:hover {
   transform: scale(1.05);
 }
 
@@ -307,14 +311,14 @@ background-color: #fff;
 }
 
 .header__button > a,
-.modal__button > a{
+.modal__button > a {
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
 }
 
-.modal__button:not(:last-child){
+.modal__button:not(:last-child) {
   margin-right: 24px;
 }
 
@@ -410,9 +414,9 @@ background-color: #fff;
   width: 45%;
   margin: 8px;
   margin-bottom: 40px;
-  background: #2560e9;
-  color: white;
-  border-radius: 4px;
+  background: white;
+  color: black;
+  box-shadow: 12px 12px 20px 1px rgba(0, 0, 0, 0.349);
 }
 
 .project__img--wrapper {
@@ -425,6 +429,7 @@ background-color: #fff;
   width: 100%;
   height: 100%;
   transition: 400ms ease;
+  border-bottom: 1px rgb(247, 247, 247) solid;
 }
 
 .project__text {
@@ -445,9 +450,9 @@ background-color: #fff;
 .project__language {
   font-size: 12px;
   margin-right: 12px;
-  font-weight: 200;
+  font-weight: 300;
   padding: 8px;
-  border: 1px white solid;
+  border: 1px black solid;
 }
 
 .project__description {
@@ -460,20 +465,18 @@ background-color: #fff;
   justify-content: center;
   align-items: center;
   padding: 4px 8px;
-  background-color: #fff;
-  color: #000;
+  background-color: #f7f7f7;
+  color: black;
   text-decoration: none;
   margin-bottom: 8px;
   transition: 100ms ease;
 }
 
-.project__link > .MuiSvgIcon-root{
+.project__link > .MuiSvgIcon-root {
   width: 24px;
   height: 24px;
   margin-right: 4px;
 }
-
-
 
 .project__link:hover {
   background-color: rgb(241, 241, 241);
@@ -524,7 +527,7 @@ background-color: #fff;
   display: flex;
   flex-direction: column;
   padding: 40px;
-  background-color: #2560e9;
+  background-color: #24262a;
   color: white;
 }
 
@@ -637,13 +640,14 @@ background-color: #fff;
   align-items: center;
   width: 320px;
   height: 80px;
-  background-color: #2560e9;
+  background-color: #24262a;
   color: white;
   border-radius: 4px;
+  z-index: 999;
 }
 
 .message__sent--tick {
-  color: #2560e9 !important;
+  color: #24262a !important;
   background-color: #fff !important;
   font-size: 32px !important;
   padding: 4px !important;
@@ -717,15 +721,15 @@ background-color: #fff;
   margin-top: 4px;
 }
 
-.footer__info--link > p{
-  cursor: default
+.footer__info--link > p {
+  cursor: default;
 }
 
 .footer__info--link > .MuiSvgIcon-root {
   margin-right: 8px;
 }
 
-.footer__info--link > .footer__link{
+.footer__info--link > .footer__link {
   margin: 0;
 }
 
@@ -777,8 +781,7 @@ background-color: #fff;
 }
 
 @media (max-width: 900px) {
-
-  .landing__bg{
+  .landing__bg {
     width: max-content;
   }
 
@@ -790,11 +793,11 @@ background-color: #fff;
     width: 78%;
   }
 
-  .header__content > h1{
+  .header__content > h1 {
     font-size: 70px;
   }
 
-  .header__content > h2{
+  .header__content > h2 {
     font-size: 32px;
   }
 
@@ -812,8 +815,8 @@ background-color: #fff;
   }
 }
 
-@media (max-width: 768px){
-  .footer__row{
+@media (max-width: 768px) {
+  .footer__row {
     justify-content: space-evenly;
   }
 
@@ -822,120 +825,120 @@ background-color: #fff;
     margin-right: 40px;
   }
 
-  .footer__title{
+  .footer__title {
     font-size: 16px;
   }
 
-  .footer__link{
+  .footer__link {
     font-size: 14px;
   }
-  
-  .footer__info--link > .MuiSvgIcon-root{
+
+  .footer__info--link > .MuiSvgIcon-root {
     font-size: 14px;
   }
 }
 
-@media (max-width: 600px){
+@media (max-width: 600px) {
   .header__content {
     width: 78%;
   }
 
-  .header__content > h1{
+  .header__content > h1 {
     font-size: 60px;
   }
 
-  .header__content > h2{
+  .header__content > h2 {
     font-size: 24px;
   }
 
-  .header__content > p{
+  .header__content > p {
     font-size: 14px;
   }
 
-  .testimonial__row{
+  .testimonial__row {
     margin: 0 20px;
   }
 
-  .testimonial__para{
-    font-size: 18px; 
+  .testimonial__para {
+    font-size: 18px;
   }
 
-  .nav__logo--wrapper{
+  .nav__logo--wrapper {
     width: 90px;
   }
 
-  .nav__links{
+  .nav__links {
     display: none;
   }
 
-  .nav__right > .MuiSvgIcon-root{
+  .nav__right > .MuiSvgIcon-root {
     display: block;
   }
 }
 
-@media (max-width: 480px){
-nav{
-  left: 45%;
-}
+@media (max-width: 480px) {
+  nav {
+    left: 45%;
+  }
 
-.aboutme__row{
-  margin: 0 24px;
-}
+  .aboutme__row {
+    margin: 0 24px;
+  }
 
-.aboutme__left > p{
-  font-size: 14px;
-}
-
-.project__text > h2{
-  font-size: 24px;
-}
-
-  .project__description{
+  .aboutme__left > p {
     font-size: 14px;
   }
 
-  .contact__form--top{
+  .project__text > h2 {
+    font-size: 24px;
+  }
+
+  .project__description {
+    font-size: 14px;
+  }
+
+  .contact__form--top {
     flex-direction: column;
   }
 
-  .contact__form--email{
+  .contact__form--email {
     margin-left: 0;
     margin-top: 16px;
   }
 
-  .footer__row{
+  .footer__row {
     flex-direction: column;
     margin: 0;
   }
 
   .footer__sections,
   .footer__externals,
-  .footer__info{
+  .footer__info {
     margin-right: 0;
     text-align: center;
   }
 
   .footer__sections,
-  .footer__externals{
+  .footer__externals {
     margin-bottom: 32px;
   }
 
-  .footer__title{
+  .footer__title {
     margin-bottom: 8px;
   }
 
-  .footer__info--link{
+  .footer__info--link {
     justify-content: center;
     align-items: center;
     margin-bottom: 8px;
   }
 
-  .footer__info--link > .MuiSvgIcon-root{
+  .footer__info--link > .MuiSvgIcon-root {
     font-size: 16px;
     margin-right: 8px;
   }
 
-  .footer__info--link > .footer__link:not(:first-child){
+  .footer__info--link > .footer__link:not(:first-child) {
     margin: 0;
   }
 }
